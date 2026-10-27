@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+
+        <title>Área de Contato do Cliente - Suporte Tech</title>
+
+        <meta
+            name="description"
+            content="Entre em contato com a equipe de suporte técnico da Suporte Tech para tirar dúvidas e enviar mensagens."
+        />
+    </head>
+
+    <body>
+        <header id="cabecalho">
+            <h1 class="titulo">Área de Contato do Cliente</h1>
+
+            <nav class="menu">
+                <a href="#">Ajuda</a> |
+                <a href="#">Sair</a>
+            </nav>
+        </header>
+
+        <main id="corpo-da-pagina">
+            <article>
+                <h2 class="subtitulo">
+                    Envie sua mensagem para a nossa equipe de suporte backend
+                </h2>
+
+                <form
+                    action="/enviar"
+                    method="POST"
+                >
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                            minlength="3"
+                        />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="celular">Telefone Celular:</label>
+                        <input
+                            type="tel"
+                            id="celular"
+                            name="celular"
+                            pattern="[0-9]{11}"
+                            minlength="11"
+                            maxlength="11"
+                            inputmode="numeric"
+                            required
+                        />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="msg">Mensagem:</label>
+                        <textarea
+                            id="msg"
+                            name="msg"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <br />
+
+                    <button type="submit">Enviar Dados</button>
+                </form>
+            </article>
+        </main>
+
+        <footer id="rodape">
+            <p>Suporte Tech 2026</p>
+        </footer>
+    </body>
+</html>
