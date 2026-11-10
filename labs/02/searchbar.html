@@ -6,18 +6,27 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <title>Document</title>
+        <meta name="description" content="Exemplo de Formulário para busca no Google">
+        <meta name=" viewport" content=" width=device-width, initial-scale=1">
+        <meta name="keywords" content="HTML, Formulário, Busca Google">
+        <meta name="robots" content="index, follow">
+        <meta name=" author" content=" Jackson Machado">
+        <title>Buscador</title>
     </head>
     <body>
-        <form action="POST">
+        <form
+            method="get"
+            action="https://www.google.com/search"
+        >
             <label for="searchbar">Pesquisar</label>
             <input
                 type="search"
                 id="searchbar"
                 placeholder="Digite aqui sua pesquisa"
+                name="q"
             />
-            <button>Buscar</button>
-            <button>Limpar</button>
+            <button type="submit">Buscar</button>
+            <button type="reset">Limpar</button>
         </form>
     </body>
 </html>
