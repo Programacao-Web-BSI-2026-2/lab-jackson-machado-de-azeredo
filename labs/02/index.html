@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Abrir chamado técnico</title>
+        <link
+            rel="stylesheet"
+            href="./styles.css"
+        />
+    </head>
+    <body>
+        <!-- CÓDIGO LEGADO: Estrutura sem semântica, sem acessibilidade e sem envio de arquivo -->
+        <main class="box-suporte">
+            <fieldset class="container">
+                <legend class="titulo">Abrir Chamado Técnico</legend>
+                <form
+                    method="post"
+                    action="https://httpbin.org/post"
+                    enctype="multipart/form-data"
+                >
+                    <label for="nome">Nome Completo:</label>
+                    <input
+                        required
+                        type="text"
+                        name="nome"
+                        id="nome"
+                    />
+                    <label for="email">E-mail de Contato:</label>
+                    <input
+                        required
+                        type="text"
+                        name="email"
+                        id="email"
+                    />
+
+                    <label for="prioridade">Prioridade:</label>
+                    <select
+                        name="prioridade"
+                        id="prioridade"
+                        required
+                    >
+                        <option>Baixa</option>
+                        <option>Média</option>
+                        <option>Alta</option>
+                    </select>
+
+                    <label for="anexo"
+                        >Arquivo de Log ou Print (PNG/PDF):</label
+                    >
+                    <p id="instrucao-anexo">
+                        Envie um arquivo no formato PNG ou PDF.
+                    </p>
+                    <input
+                        required
+                        type="file"
+                        name="anexo"
+                        id="anexo"
+                        accept="image/png,application/pdf"
+                        aria-describedby="instrucao-anexo"
+                    />
+
+                    <button
+                        class="botao"
+                        onclick="alert('Enviado')"
+                        type="submit"
+                    >
+                        Enviar Chamado
+                    </button>
+                </form>
+            </fieldset>
+        </main>
+    </body>
+</html>
