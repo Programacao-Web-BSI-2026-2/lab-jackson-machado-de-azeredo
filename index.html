@@ -1,85 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        />
-        <title>Meu Portfólio de Programação Web</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Portfólio de Programação Web</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
         <h1>Meu Portfólio de Programação Web</h1>
 
         <p>
-            Repositório de atividades práticas e documentação da disciplina de
-            Programação para Web.
+            Repositório de atividades práticas e documentação
+            da disciplina de Programação para Web.
         </p>
+    </header>
 
-        <h2>Menu Principal</h2>
+    <nav class="menu-lateral" aria-label="Menu principal">
 
-        <nav>
-            <ul>
-                <li><strong>Início (Você está aqui)</strong></li>
+        <ul class="menu-principal">
 
-                <li>
-                    <a href="referencias.html"> Material de Referência HTML </a>
-                </li>
+            <li class="pagina-atual">
+                <strong aria-current="page">Início</strong>
+            </li>
 
-                <li>
-                    Registros de Sala de Aula (Markdown)
-                    <ul>
-                        <li>
-                            <a href="doc/pratica-01.html">
-                                Registro da Prática 01
-                            </a>
-                        </li>
-                        <li>
-                            <a href="doc/comandos-git.html">
-                                Guia de Comandos Git
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li>
+                <a href="referencias.html">
+                    Material de Referência HTML
+                </a>
+            </li>
 
-                <li>
+            <li class="grupo-menu">
+
+                <span class="titulo-grupo">
+                    Registros de Sala de Aula
+                </span>
+
+                <ul class="lista-documentos">
+
+                    <li>
+                        <a href="doc/pratica-01.html">
+                            Registro da Prática 01
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="doc/comandos-git.html">
+                            Guia de Comandos Git
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="grupo-menu">
+
+                <span class="titulo-grupo">
                     Trilhas de Laboratório
-                    <ol>
-                        <li>
-                            <strong>Módulo 1: Estrutura (HTML)</strong>
-                            <ul>
-                                <li>
-                                    <a href="labs/01/index.html">
-                                        Lab 01 - Hello World e Tags Básicas
-                                    </a>
-                                </li>
+                </span>
 
-                                <li>
-                                    <a href="labs/02/index.html">
-                                        Lab 02 - Listas Ordenadas e Não
-                                        Ordenadas
-                                    </a>
-                                </li>
+                <ol class="lista-modulos">
 
-                                <li>
-                                    <a href="labs/03/index.html">
-                                        Lab 03 - Estruturação de Tabelas
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                        <strong>
+                            Módulo 1: Estrutura (HTML)
+                        </strong>
 
-        <hr />
+                        <ul class="lista-laboratorios">
 
-        <h2>Status do Projeto</h2>
+                            <li>
+                                <a href="labs/01/index.html">
+                                    Lab 01 - Hello World e Tags Básicas
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="labs/02/index.html">
+                                    Lab 02 - Listas Ordenadas e Não Ordenadas
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="labs/03/index.html">
+                                    Lab 03 - Estruturação de Tabelas
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>
+                            Módulo 2: Mídia e Estilização
+                        </strong>
+
+                        <ul class="lista-laboratorios">
+
+                            <li>
+                                <a href="labs/lab04/index.html">
+                                    Lab 04 - Imagens Responsivas
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ol>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <main class="conteudo-principal">
+
+        <h2>Bem-vindo ao Portfólio</h2>
 
         <p>
-            Este site consolida as implementações práticas em HTML e a
-            documentação técnica em Markdown desenvolvidas durante as aulas.
+            Este espaço reúne as atividades práticas realizadas
+            ao longo da disciplina de Programação para Web.
+
+            Utilize o menu lateral para navegar entre os
+            registros de sala de aula, os laboratórios
+            organizados por módulo e a página de referências.
         </p>
-    </body>
+
+        <hr>
+
+    </main>
+
+</body>
 </html>
